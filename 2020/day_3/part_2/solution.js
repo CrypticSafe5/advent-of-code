@@ -1,5 +1,3 @@
-// INCOMPLETE
-
 // Loop for height of map
 // If next position is off side of map
 // Round position back from zero and count diff
