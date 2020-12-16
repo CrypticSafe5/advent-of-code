@@ -4,7 +4,7 @@
 const { readFileSync } = require('fs');
 
 const sumSolution = [];
-const list = readFileSync('./expense_report.txt', 'utf8').split('\r\n').map((e) => parseInt(e, 10));
+const list = readFileSync('../expense_report.txt', 'utf8').split('\r\n').map((e) => parseInt(e, 10));
 
 list.forEach((x) => {
 	list.forEach((y) => {
