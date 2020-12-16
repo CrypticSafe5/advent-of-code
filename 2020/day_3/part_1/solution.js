@@ -11,7 +11,6 @@ let output = 0;
 const map = readFileSync('../input.txt', 'utf8').split('\r\n');
 
 const mapWidth = map[0].length;
-console.log('WIDTH:', mapWidth);
 const xDiff = 3;
 const yDiff = 1;
 
@@ -24,9 +23,8 @@ map.forEach((e, i) => {
 	let nextX = x + xDiff;
 	if (e[x] === '#') output++;
 
-	// EXAMPLE: curr x = 29, nextX = 32, width = 31, actualNextX = 0
 	// Next position
-	if (nextX > mapWidth) {
+	if (nextX >= mapWidth) {
 		x = nextX - mapWidth;
 	} else {
 		x = nextX;
